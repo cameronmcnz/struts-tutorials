@@ -1,0 +1,10 @@
+<!-- Hello World in Struts index.html file -->
+<html>
+  <body>
+    <form action="hello.action">
+      Please tell my your name
+      <input name="firstName" type="text" value="World"/>
+      <input value="submit" type="submit" />
+    </form>
+  </body>
+</html>

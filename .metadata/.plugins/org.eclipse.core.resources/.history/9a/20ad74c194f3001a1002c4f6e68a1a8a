@@ -1,0 +1,11 @@
+<%@ taglib prefix="s" uri="/struts-tags" %>
+<%@ page contentType="text/html; charset=UTF-8" %>
+<html>
+  <body>
+    <s:form action="hello">
+      
+      <s:textfield name="userName" label="Please tell my your name" />
+      <s:submit value="Submit" />
+    </s:form>
+  </body>
+</html>

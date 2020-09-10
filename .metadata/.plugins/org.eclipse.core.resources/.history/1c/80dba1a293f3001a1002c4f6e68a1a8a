@@ -1,0 +1,10 @@
+<html>
+<body>
+<s:form action="hello">
+
+<input type="text" name="firstName" value="World"/>
+<s:textfield name="userName" label="May I ask your name? " />
+<input type="submit" value="submit"/>
+</s:form>
+</body>
+</html> 
