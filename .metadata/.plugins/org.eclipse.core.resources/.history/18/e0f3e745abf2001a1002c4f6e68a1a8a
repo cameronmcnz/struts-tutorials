@@ -1,8 +1,0 @@
-<html>
-<body>
-<form action="hello.action">
-May I ask your name? <input type="text" name="firstName"/><br/>
-<input type="submit" value="submit"/>
-</form>
-</body>
-</html> 

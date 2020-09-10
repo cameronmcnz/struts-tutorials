@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\workspaces\struts\struts-example"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -25,13 +26,10 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.mcnz.struts"/>
 		</list>
 		<list key="groupId">
-			<item value="com.mcnz"/>
 		</list>
 		<list key="artifactId">
-			<item value="struts"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -47,10 +45,17 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.mcnz"/>
+			<item value="struts-example"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="struts-forms-example"/>
+			<item value="struts-hello-world"/>
+			<item value="struts-hello-world-2"/>
+			<item value="struts-example"/>
+			<item value="asdf"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

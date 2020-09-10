@@ -1,7 +1,0 @@
-package com.mcnz.struts;
-
-public class HelloAction {
-	
-	private String firstName;
-
-}
