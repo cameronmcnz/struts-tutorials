@@ -2,4 +2,5 @@
 <modules>
   <module moduleId="org.eclipse.jst.j2ee.server:examples" serverId="Tomcat v9.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:struts" serverId="Liberty Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:struts-form-examples" serverId="Tomcat v9.0 Server at localhost"/>
 </modules>

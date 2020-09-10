@@ -5,7 +5,7 @@ xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
 http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" 
 id="apache-struts-config-example" 
 version="3.0">
-  <display-name>Hello World in Struts 2.0</display-name>
+  <display-name>Struts Form Handling</display-name>
   
   <filter>
     <filter-name>struts2</filter-name>
