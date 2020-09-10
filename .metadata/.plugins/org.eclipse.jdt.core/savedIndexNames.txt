@@ -1,0 +1,5 @@
+INDEX VERSION 1.131+C:\workspaces\struts\.metadata\.plugins\org.eclipse.jdt.core
+2783600814.index
+277333747.index
+1438798046.index
+2515802452.index

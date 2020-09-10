@@ -1,0 +1,37 @@
+package com.baeldung.struts;
+
+import org.apache.struts2.convention.annotation.Action;
+import org.apache.struts2.convention.annotation.Namespace;
+import org.apache.struts2.convention.annotation.Result;
+
+//@Namespace("/tutorial")
+@Action("/car")
+@Result(name = "success", location = "/result.jsp")
+public class HelloAction { 
+    private String firstName;
+
+    public String execute() {
+        System.out.println("inside execute(): firstName is" + firstName);
+        //this.setCarMessage(this.carMessageService.getMessage(firstName));
+        return "success";
+    }
+
+    public String getCarName() {
+        return carName;
+    }
+
+    public void setCarName(String carName) {
+        this.carName = carName;
+    }
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+
+
+}

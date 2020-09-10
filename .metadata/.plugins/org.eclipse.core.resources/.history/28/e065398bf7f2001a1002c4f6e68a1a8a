@@ -1,0 +1,5 @@
+<struts>
+        <action name="hello" class="com.mcnz.GoodbyeAction" method="execute">
+            <result name="success">/results.jsp</result>
+        </action>
+</struts>

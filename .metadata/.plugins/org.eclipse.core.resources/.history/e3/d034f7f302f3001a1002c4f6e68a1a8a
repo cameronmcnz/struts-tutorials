@@ -1,0 +1,19 @@
+package com.mcnz.struts;
+/* Struts Hello World Example Action Class */
+public class HelloWorldAction {
+	
+	public String execute() {
+		System.out.println("Value of firstname is: " + firstName);
+		return "success";
+	}
+	
+	private String firstName;
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+}
