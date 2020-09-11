@@ -15,6 +15,9 @@
 <s:textfield key="personBean.lastName"  />
 <s:textfield key="personBean.email"  />
 <s:textfield key="personBean.age" />
+<s:textfield key="personBean.website" />
+<s:textfield key="personBean.phone" />
+
 <s:submit/>
 
 </s:form>
@@ -36,6 +39,9 @@ Display properties properly
 
 <s:url action="badcall"  var="badLink"/>
 <s:a href="%{badLink}">Trigger an Exception</s:a>
+<br/><br/>
+<a href='<s:url action="register" namespace="config-browser" />'>Launch the configuration browser</a>
+
 
 </body>
 </html>

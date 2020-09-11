@@ -1,11 +1,29 @@
 package com.mcnz.struts;
 
+
 public class Person {
+	
 	
 	private String firstName;
 	private String lastName;
 	private String email;
 	private int age;
+	private String website;
+	private String phone;
+	
+
+	public String getWebsite() {
+		return website;
+	}
+	public void setWebsite(String website) {
+		this.website = website;
+	}
+	public String getPhone() {
+		return phone;
+	}
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
 	public String getFirstName() {
 		return firstName;
 	}
@@ -30,11 +48,13 @@ public class Person {
 	public void setAge(int age) {
 		this.age = age;
 	}
-	
 	@Override
 	public String toString() {
-		return "Person [firstName=" + firstName + ", lastName=" + lastName + ", email=" + email + ", age=" + age + "]";
+		return "Person [firstName=" + firstName + ", lastName=" + lastName + ", email=" + email + ", age=" + age
+				+ ", website=" + website + ", phone=" + phone + "]";
 	}
+	
+
 	
 
 }
