@@ -1,6 +1,7 @@
 package com.mcnz.struts;
 
 import org.apache.struts2.convention.annotation.Action;
+import org.apache.struts2.convention.annotation.ExceptionMapping;
 import org.apache.struts2.convention.annotation.Result;
 import org.apache.struts2.convention.annotation.Results;
 import org.apache.struts2.interceptor.validation.SkipValidation;
@@ -10,15 +11,15 @@ import com.opensymphony.xwork2.ActionSupport;
 @Action("/register")
 @Results({
 	@Result(name = "success", location = "/thankyou.jsp"),
-	@Result(name = "input", location = "/register.jsp")
+	@Result(name = "input", location = "/register.jsp"),
 })
+@ExceptionMapping(exception="java.lang.Exception", result = "error")
 public class RegisterAction extends ActionSupport {
 
 	private static final long serialVersionUID = 1L;
 	
-	
-	@Action("/display" )
-	@SkipValidation
+
+	@SkipValidation @Action( "/display")
 	public String display() throws Exception {
 		System.out.println("In display action");
 		return INPUT;

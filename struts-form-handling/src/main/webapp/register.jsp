@@ -19,8 +19,22 @@
 
 </s:form>
 
+<s:text name="package.greeting" /><br/>
+<s:text name="global.greeting" /><br/><br/>
+
 <s:url action="display"  var="displayPageLink"/>
-<p><s:a href="%{displayPageLink}">Please display.</s:a></p>
+<s:a href="%{displayPageLink}">
+Display properties properly 
+</s:a>
+ || 
+<s:url action="display"  var="displayFrenchPageLink">
+  <s:param name="request_locale">fr</s:param>
+</s:url>
+
+<s:a href="%{displayFrenchPageLink}">Display French properties properly</s:a>
+<br/><br/>
+
+
 
 </body>
 </html>

@@ -12,6 +12,11 @@ version="3.0">
     <filter-class>
     org.apache.struts2.dispatcher.filter.StrutsPrepareAndExecuteFilter
     </filter-class>
+        <init-param>
+            <param-name>struts.custom.i18n.resources</param-name>
+            <param-value>ApplicationResources</param-value>
+        </init-param>  
+
   </filter>
   <filter-mapping>
     <filter-name>struts2</filter-name>
