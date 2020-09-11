@@ -12,11 +12,23 @@ import com.opensymphony.xwork2.ActionSupport;
 @Results({
 	@Result(name = "success", location = "/thankyou.jsp"),
 	@Result(name = "input", location = "/register.jsp"),
+	@Result(name = "error", location = "/error.jsp")
 })
-@ExceptionMapping(exception="java.lang.Exception", result = "error")
+@ExceptionMapping(exception="java.lang.NullPointerException", result = "error")
 public class RegisterAction extends ActionSupport {
 
 	private static final long serialVersionUID = 1L;
+	
+	
+	@SkipValidation @Action( value="/badcall", exceptionMappings = {
+            @ExceptionMapping(exception = "java.lang.Exception", 
+            					result = "error")}
+    )
+	public String badcall() throws Exception {
+		System.out.println("In display action");
+		if(true) {throw new Exception();}
+		return ERROR;
+	}
 	
 
 	@SkipValidation @Action( "/display")

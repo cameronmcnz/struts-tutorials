@@ -34,7 +34,8 @@ Display properties properly
 <s:a href="%{displayFrenchPageLink}">Display French properties properly</s:a>
 <br/><br/>
 
-
+<s:url action="badcall"  var="badLink"/>
+<s:a href="%{badLink}">Trigger an Exception</s:a>
 
 </body>
 </html>
