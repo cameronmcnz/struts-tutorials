@@ -114,3 +114,11 @@
 0:0:0:0:0:0:0:1 - - [10/Sep/2020:17:50:16 -0400] "GET /register.action?firstName=World HTTP/1.1" 404 1089
 0:0:0:0:0:0:0:1 - - [10/Sep/2020:17:50:31 -0400] "GET /struts-form-examples/register.jsp HTTP/1.1" 200 1535
 0:0:0:0:0:0:0:1 - - [10/Sep/2020:17:50:32 -0400] "POST /struts-form-examples/register HTTP/1.1" 404 1201
+127.0.0.1 - - [10/Sep/2020:18:07:13 -0400] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [10/Sep/2020:18:07:14 -0400] "GET /struts-form-handling/register.jsp HTTP/1.1" 200 1731
+0:0:0:0:0:0:0:1 - - [10/Sep/2020:18:07:34 -0400] "GET /struts-form-handling/register.jsp HTTP/1.1" 200 1367
+127.0.0.1 - - [10/Sep/2020:18:13:07 -0400] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [10/Sep/2020:18:13:17 -0400] "GET /struts-form-handling/register.jsp HTTP/1.1" 200 1396
+0:0:0:0:0:0:0:1 - - [10/Sep/2020:18:13:45 -0400] "POST /struts-form-handling/register.action HTTP/1.1" 200 190
+0:0:0:0:0:0:0:1 - - [10/Sep/2020:18:15:43 -0400] "GET /struts-form-handling/register.jsp HTTP/1.1" 200 1440
+0:0:0:0:0:0:0:1 - - [10/Sep/2020:18:16:40 -0400] "POST /struts-form-handling/register.action;jsessionid=F24CF6AAFA3D686CA66265ED6AEBDCD0 HTTP/1.1" 200 190

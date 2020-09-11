@@ -15,5 +15,7 @@ C:\workspaces\struts\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\37497
 \struts-example\src\main\java
 C:\workspaces\struts\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3469097540.index
 \struts-hello-world-2\src\main\java
+C:\workspaces\struts\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1114221999.index
+\struts-form-handling\src\main\java
 C:\workspaces\struts\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1164327470.index
 \struts\src\main\java
