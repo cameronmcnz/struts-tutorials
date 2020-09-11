@@ -1,3 +1,2 @@
 INDEX VERSION 1.131+C:\workspaces\struts\.metadata\.plugins\org.eclipse.jdt.core
-1614618110.index
 1768753475.index
