@@ -3,6 +3,7 @@ package com.mcnz.struts;
 import org.apache.struts2.convention.annotation.Action;
 import org.apache.struts2.convention.annotation.Result;
 import org.apache.struts2.convention.annotation.Results;
+import org.apache.struts2.interceptor.validation.SkipValidation;
 
 import com.opensymphony.xwork2.ActionSupport;
 
@@ -14,6 +15,14 @@ import com.opensymphony.xwork2.ActionSupport;
 public class RegisterAction extends ActionSupport {
 
 	private static final long serialVersionUID = 1L;
+	
+	
+	@Action("/display" )
+	@SkipValidation
+	public String display() throws Exception {
+		System.out.println("In display action");
+		return INPUT;
+	}
 	
 	public String execute() throws Exception {
 		System.out.println("The age is: " + personBean.getAge());
