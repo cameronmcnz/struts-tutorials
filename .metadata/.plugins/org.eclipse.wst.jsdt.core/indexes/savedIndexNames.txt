@@ -1,15 +1,10 @@
-INDEX VERSION 1.4+C:\workspaces\struts\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-1537871909.index
-2515802452.index
-4276754144.index
-3449566994.index
+INDEX VERSION 1.4+C:\workspace\cameronmcnz\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
 277333747.index
-3127371044.index
-3127371044.index
-3749741023.index
-1114221999.index
-573764699.index
-2473701507.index
-3426873761.index
 3373227766.index
+2968768332.index
+3202186953.index
 1768753475.index
+2515802452.index
+4148665934.index
+3449566994.index
+2370662320.index
