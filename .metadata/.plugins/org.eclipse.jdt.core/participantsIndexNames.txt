@@ -25,3 +25,5 @@ C:\workspaces\struts\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\11142
 \struts-form-handling\src\main\java
 C:\workspaces\struts\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1164327470.index
 \struts\src\main\java
+C:\workspaces\struts\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\573764699.index
+\struts-upload\src\main\java

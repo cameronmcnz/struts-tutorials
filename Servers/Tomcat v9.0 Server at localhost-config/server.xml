@@ -149,7 +149,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="struts-ajax-jquery" path="/struts-ajax-jquery" reloadable="true" source="org.eclipse.jst.jee.server:struts-ajax-jquery"/></Host>
+      <Context docBase="struts-upload" path="/struts-upload" reloadable="true" source="org.eclipse.jst.jee.server:struts-upload"/></Host>
     </Engine>
   </Service>
 </Server>
