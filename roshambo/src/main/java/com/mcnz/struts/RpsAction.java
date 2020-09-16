@@ -19,16 +19,29 @@ import com.opensymphony.xwork2.validator.annotations.ValidatorType;
 	@Result(name = "error", location = "/error.jsp")
 })
 public class RpsAction extends ActionSupport {
-	
-	private String clientGesture;
-	private String gameResult;
 
 	@RequiredStringValidator(type = ValidatorType.SIMPLE, fieldName = "clientGesture", message = "Type rock, paper or scissors.")
 	public String execute() throws Exception {
 		System.out.print(clientGesture);
-		
+		Map session = (Map) ActionContext.getContext().get("session");
+		ArrayList<String> history =  (ArrayList<String>)session.get("history");
+		if (history == null) {
+			history = new ArrayList<String>(); 
+			session.put("wins", 0);
+			session.put("losses", 0);
+			session.put("ties",  0);
+		}
+		history.add(clientGesture);
+		session.put("history", history);
 		if (clientGesture.equalsIgnoreCase("paper")) {
-			gameResult="win";
+			int count = 1;
+			Object wins = session.get("wins");
+			if (wins!=null) {
+				count = Integer.parseInt(wins.toString());
+				count++;
+			}
+			gameResult="win"; 
+			session.put("wins", count);
 		}
 		if (clientGesture.equalsIgnoreCase("null")) {
 			throw new NullPointerException();
@@ -37,12 +50,18 @@ public class RpsAction extends ActionSupport {
 		return "success";
 	}
 	
+		private String clientGesture;
+	private String gameResult;
+	
 	public String getGameResult() {
 		return gameResult;
 	}
 	public void setGameResult(String gameResult) {
 		this.gameResult = gameResult;
 	}
+
+
+
 
 	public String getClientGesture() {
 		return clientGesture;
