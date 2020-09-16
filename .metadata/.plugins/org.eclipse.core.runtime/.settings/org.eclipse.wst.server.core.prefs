@@ -1,3 +1,3 @@
 eclipse.preferences.version=1
 module-start-timeout=300000
-runtimes=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<runtimes>\r\n  <runtime id\="Liberty Runtime" id-set\="true" location\="C\:/_tools/liberty" name\="Liberty Runtime" runtime-type-id\="com.ibm.ws.st.runtime.wlp" timestamp\="0"/>\r\n  <runtime id\="Apache Tomcat v9.0" location\="C\:/_tools/tomcat" name\="Apache Tomcat v9.0" runtime-type-id\="org.eclipse.jst.server.tomcat.runtime.90" timestamp\="0"/>\r\n</runtimes>\r\n
+runtimes=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<runtimes>\r\n  <runtime id\="Apache Tomcat v8.5" location\="C\:/tools/apache-tomcat-8.5.38" name\="Apache Tomcat v8.5" runtime-type-id\="org.eclipse.jst.server.tomcat.runtime.85" timestamp\="0"/>\r\n</runtimes>\r\n
