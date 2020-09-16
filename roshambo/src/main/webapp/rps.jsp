@@ -9,8 +9,8 @@
 
 Would you like to play a game?<br/>
 <s:form action="rpsaction">
-<s:textfield name="clientGesture"  />
-<s:submit type="submit"/>
+	<s:textfield name="clientGesture"  />
+	<s:submit type="submit"/>
 </s:form>
 
 <s:if test='gameResult != null'>
@@ -48,7 +48,7 @@ Ties: <s:property value="ties" default="0"/><br/>
 </s:if>
 
 
-Here is your game history:<br/>
+Here is your game history:<br/><br/>
 <s:iterator value="#session['history']">
   You chose the: <s:property/><br/>
 </s:iterator>
