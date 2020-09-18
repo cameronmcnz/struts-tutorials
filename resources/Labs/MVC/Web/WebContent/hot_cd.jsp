@@ -1,0 +1,1 @@
+Your hot cd choice is number: <%= request.getAttribute("cdNumber")  %> 

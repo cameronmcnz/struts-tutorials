@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+	<constant name="struts.enable.DynamicMethodInvocation" value="false" />
+	<constant name="struts.devMode" value="false" />
+	
+	<!-- Add packages here -->
+	<package name="upload" extends="struts-default">
+	
+		<!-- Global results and mappings for exceptions thrown by Actions -->
+		<global-results>
+			<result name="IOProblem">/IOException.jsp</result>
+		</global-results>
+		
+		<global-exception-mappings>
+			<exception-mapping 
+					exception="java.io.IOException" 
+					result="IOProblem" />
+		</global-exception-mappings>
+		
+		<!-- Add actions here -->
+		
+		<!-- TODO: the AddAlbum action should pass to the view 
+		                 (displayImage.jsp) on success, else re-display the form.  -->
+		<action name="AddAlbum" 
+				class="xxx.xxx.xxx.xxx">
+
+
+		</action>
+	
+	</package>
+
+</struts>

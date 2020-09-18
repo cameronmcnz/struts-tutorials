@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd"> 
+<struts>
+
+    <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+    <constant name="struts.devMode" value="false" />
+
+
+    <!-- Add packages -->
+    <package name="i18n" namespace="/i18n" extends="struts-default">
+
+		<!-- Add actions -->
+        <action name="SetLanguage" class="triveratunes.i18n.SetLanguageAction">
+            <result>main.jsp</result>
+        </action>
+
+
+    </package>
+
+</struts>

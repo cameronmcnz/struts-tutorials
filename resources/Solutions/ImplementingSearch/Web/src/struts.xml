@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd"> 
+<struts>
+
+    <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+    <constant name="struts.devMode" value="false" />
+    <constant name="struts.custom.i18n.resources" value="ApplicationResources" />
+
+    <!-- Add packages here -->
+    <package name="store" namespace="/store" extends="struts-default">
+    
+        <global-results>
+            <result name="DAOProblem">/store/DAOException.jsp</result>
+        </global-results>
+
+        <global-exception-mappings>
+            <exception-mapping 
+                exception="triveratunes.alltogether.util.dao.DAOException" 
+                result="DAOProblem" />
+        </global-exception-mappings>
+        
+        <!-- Add actions here -->
+       
+        <!-- Mapping for forwardToInsertCD -->
+		<action name="forwardToInsertCD">
+		    <result>/store/insertCD.jsp</result>
+		</action>
+
+        <!-- Mapping for insert Action-->
+		<action name="insertCD" class="triveratunes.alltogether.web.InsertAction">
+            <!-- Exercise 9: on success, use updateSuccessful.jsp for now-->
+			<result>/store/updateSuccessful.jsp</result>
+		</action>
+		
+        <!-- Mapping for delete Action-->
+		<action name="deleteCD" 
+			class="triveratunes.alltogether.web.DeleteAction">
+			<result>/store/deleteSuccessful.jsp</result>
+		</action>
+		
+        <!-- Mapping for edit Action-->
+		<action name="editCD" class="triveratunes.alltogether.web.EditAction">
+			<result>/store/updateCD.jsp</result>
+		</action>
+
+        <!-- Mapping for update Action-->
+		<action name="updateCD" class="triveratunes.alltogether.web.UpdateAction">
+			<result>/store/updateSuccessful.jsp</result>
+		</action>
+
+        <!-- Mapping for search Action-->
+        <action name="search"  class="triveratunes.alltogether.web.SearchAction">
+			<result>/store/search_results.jsp</result>
+        </action>
+        
+    </package>
+
+</struts>

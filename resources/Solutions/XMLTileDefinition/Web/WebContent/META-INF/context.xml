@@ -1,0 +1,12 @@
+<Context path="/jdbc" docBase="jdbc" debug="0" reloadable="false" override="true"> 
+  <Resource name="jdbc/triveratunesDS" auth="Container" type="javax.sql.DataSource"
+    username="sa"
+    password="password"
+    driverClassName="org.apache.derby.jdbc.ClientDriver"
+    url="jdbc:derby://localhost:1527/TriveraTunes"
+    minEvictableIdleTimeMillis="4000"
+    timeBetweenEvictionRunsMillis="5000"
+    maxIdle="2"
+    maxWait="5000" />
+    <WatchedResource>WEB-INF/web.xml</WatchedResource>
+</Context> 

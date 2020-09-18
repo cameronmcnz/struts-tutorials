@@ -1,0 +1,76 @@
+<!DOCTYPE validators PUBLIC
+        "-//OpenSymphony Group//XWork Validator 1.0.2//EN"
+        "http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+ 
+<!-- Implement validation -->
+<validators>
+
+    <!-- id is required -->
+	<field name="cd.id"> 
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>You must enter an ID</message>
+		</field-validator>
+	</field>
+
+    <!-- name is required -->
+	<field name="cd.name">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>You must enter a name</message>
+		</field-validator>
+	</field>
+
+    <!-- artist is required -->
+	<field name="cd.artist">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>You must enter an artist</message>
+		</field-validator>
+	</field>
+
+    <!-- price is required, and must be valid dollar amount -->
+	<field name="cd.price">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>You must enter a price</message>
+		</field-validator>
+	</field>
+	<field name="cd.price">
+		<field-validator type="regex">
+			<param name="expression"><![CDATA[[1-9][0-9]*.\d{1,2}]]></param>
+			<message>Please enter a valid price</message>
+		</field-validator>
+	</field>
+
+    <!-- listPrice is required, and must be valid dollar amount -->
+	<field name="cd.listPrice">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>You must enter a list price</message>
+		</field-validator>
+	</field>
+	<field name="cd.listPrice">
+		<field-validator type="regex">
+			<param name="expression"><![CDATA[[1-9][0-9]*.\d{1,2}]]></param>
+			<message>Please enter a valid list price</message>
+		</field-validator>
+	</field>
+
+    <!-- cd.releaseDate is required, and must be valid date (yyyy-mm-dd) -->
+	<field name="cd.releaseDate">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>You must enter a release date</message>
+		</field-validator>
+	</field>
+	<field name="cd.releaseDate">
+		<field-validator type="regex">
+			<param name="expression"><![CDATA[(19|20)\d\d[- /.](0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])]]></param>
+			<message>
+				Please enter a valid date of the format YYYY-MM-DD
+			</message>
+		</field-validator>
+	</field>
+
+</validators>

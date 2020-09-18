@@ -1,0 +1,31 @@
+<!DOCTYPE validators PUBLIC
+        "-//OpenSymphony Group//XWork Validator 1.0.2//EN"
+        "http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+         
+<validators>
+
+    <!-- artist is required -->  
+    <field name="artist">
+        <field-validator type="requiredstring">
+            <param name="trim">true</param>
+            <message>You must enter an artist</message>
+        </field-validator>
+    </field>
+
+    <!-- albumName is required --> 
+    <field name="albumName">
+        <field-validator type="requiredstring">
+            <param name="trim">true</param>
+            <message>You must enter a name</message>
+        </field-validator>
+    </field>
+
+    <!-- releaseYear is required --> 
+    <field name="releaseYear">
+        <field-validator type="requiredstring">
+            <param name="trim">true</param>
+            <message>You must enter a release year</message>
+        </field-validator>
+    </field>
+
+</validators>
